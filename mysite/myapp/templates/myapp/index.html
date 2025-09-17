@@ -1,0 +1,44 @@
+{% extends 'myapp/base.html' %}
+{% block body %}
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 m-10">
+    {% for itemed in item %}
+    <div class="bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition transform flex flex-col overflow-hidden">
+        
+        <!-- Image (Fixed height, not full width, no hover stretch) -->
+        <div class="w-full h-48 bg-gray-100 overflow-hidden">
+            <img class="w-full h-full object-cover" src="{{itemed.item_image}}" alt="{{itemed.item_name}}">
+        </div>
+
+        <!-- Content Section -->
+        <div class="p-5 flex flex-col justify-between flex-grow">
+            <!-- Title & Description -->
+            <div>
+                <h2 class="font-bold text-xl text-gray-800 mb-1">{{itemed.item_name}}</h2>
+                <p class="text-gray-600 text-sm mb-3 leading-relaxed">
+                    {{itemed.item_des}} Freshly prepared with quality ingredients, perfect for any occasion.
+                    A delightful mix of taste and nutrition for a fulfilling meal experience.
+                </p>
+                <p class="text-green-700 font-bold text-lg">${{itemed.item_price}}</p>
+            </div>
+
+            <!-- Button at Bottom -->
+            <div class="mt-4 flex justify-end">
+                <a href="{% url 'myapp:detail' itemed.id %}" 
+                   class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
+                    View Details
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+
+{% endblock %}
+
+   
+
+
+

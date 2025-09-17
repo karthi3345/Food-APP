@@ -1,0 +1,54 @@
+{% extends "myapp/base.html" %}
+
+{% block body %}
+<div class="max-w-3xl mx-auto mt-10 bg-white rounded-xl shadow-md overflow-hidden">
+    <!-- Item Image -->
+    <div class="w-full h-72 overflow-hidden">
+        <img src="{{ detail_item.item_image }}" 
+             alt="{{ detail_item.item_name }}" 
+             class="w-full h-full object-cover rounded-t-xl hover:scale-105 transition-transform duration-300">
+    </div>
+
+    <!-- Content Section -->
+    <div class="p-6">
+        <!-- Item Name -->
+        <h1 class="text-3xl font-bold text-gray-800 mb-2">{{ detail_item.item_name }}</h1>
+        
+        <!-- Description -->
+        <p class="text-gray-600 text-lg mb-4 leading-relaxed">
+            {{ detail_item.item_des }}
+        </p>
+        
+        <!-- Price -->
+        <div class="text-green-700 font-bold text-2xl mb-6">
+            ${{ detail_item.item_price }}
+        </div>
+
+        <!-- Edit & Delete Buttons (static) -->
+        <div class="flex space-x-4 mb-6">
+    <!-- Edit Button styled as a link -->
+    <a
+        href="{% url 'myapp:update_item' id=detail_item.id %}"
+        class="flex-1 bg-yellow-400 text-white py-3 rounded-lg font-semibold hover:bg-yellow-500 transition text-center block"
+    >
+        Edit
+    </a>
+
+    <!-- Delete Button -->
+    
+      <a href="{% url 'myapp:delete_item' id=detail_item.id %}" class="flex-1 bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition text-center "
+    > Delete
+       
+    </button>
+</div>
+
+        
+        <!-- Order Now Button -->
+        <div>
+            <a href="#" class="block bg-blue-600 text-white px-6 py-3 circular-lg hover:bg-blue-700 transition text-center font-semibold">
+                Order Now
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
