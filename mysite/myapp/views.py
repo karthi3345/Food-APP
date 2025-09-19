@@ -53,9 +53,9 @@ def delete_item(request,id ):
     if request.method=="POST":
        item.delete()
        return redirect("myapp:index")
-    return render(request,"myapp/item-delete.html")
+    return render(request,"myapp/item-delete.html", {"item": item})
     
-    from django.shortcuts import render
+ 
 
 def about(request):
     return render(request, "myapp/about.html")

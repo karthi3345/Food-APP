@@ -14,3 +14,15 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return f"{self.user.username} Profile"
+    
+
+    from django.db import models
+from django.contrib.auth.models import User
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    img = models.ImageField(default="profilepic.jpg", upload_to="profile_pic/")
+    location = models.CharField(max_length=500)
+
+    def __str__(self):
+        return self.user.username
