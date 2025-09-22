@@ -15,7 +15,7 @@
 
             <a href="{% url 'myapp:address'%}">Address</a>
             <a href="{% url 'myapp:about' %}">About us</a>
-            <a href="">Welcome {{user.username}} !</a>
+            <a href="{% url "users:profile" %}">Welcome {{user.username}} !</a>
              <a href="{% url 'users:logout'%}">Logout </a>
 
 
