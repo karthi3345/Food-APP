@@ -6,7 +6,9 @@ from django.shortcuts import render, redirect
 from .forms import ItemForm
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView,UpdateView,DeleteView
+from django.urls import reverse_lazy
+
 
 
 # # Create your views here.
@@ -54,6 +56,12 @@ def create_item(request):
 class ItemCreateView(CreateView):
     model=Items
     fields=["item_name","item_des", "item_price","item_image"]
+    template_name = "myapp/item-form.html"  # ✅ This must match the template file name
+   
+
+
+
+
 def update_item(request, id):
     item= Items.objects.get(id=id)
     form = ItemForm( request.POST or None ,instance=item)
@@ -65,12 +73,25 @@ def update_item(request, id):
     }
     return render (request,"myapp/item-form.html",context)
 
+class ItemUpdateView(UpdateView):
+    model=Items
+    fields=["item_name","item_des", "item_price","item_image"]
+    # template_name_suffix= "_update_form.html"  #determine the /item/update/form
+    template_name = "myapp/item-form.html" 
+
+
 def delete_item(request,id ):
     item=Items.objects.get(id=id)
     if request.method=="POST":
        item.delete()
        return redirect("myapp:index")
     return render(request,"myapp/item-delete.html", {"item": item})
+
+class ItemDeleteView(DeleteView):
+    model=Items
+    template_name="myapp/item-delete.html"
+    success_url = reverse_lazy('myapp:index') 
+    
 
 
  

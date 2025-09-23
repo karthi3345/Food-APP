@@ -28,7 +28,7 @@
         <div class="flex space-x-4 mb-6">
     <!-- Edit Button styled as a link -->
     <a
-        href="{% url 'myapp:update_item' id=detail_item.id %}"
+        href="{% url 'myapp:update_item' pk=detail_item.id %}"
         class="flex-1 bg-yellow-400 text-white py-3 rounded-lg font-semibold hover:bg-yellow-500 transition text-center block"
     >
         Edit
@@ -36,7 +36,7 @@
 
     <!-- Delete Button -->
     
-      <a href="{% url 'myapp:delete_item' id=detail_item.id %}" class="flex-1 bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition text-center "
+      <a href="{% url 'myapp:delete_item' pk=detail_item.id %}" class="flex-1 bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition text-center "
     > Delete
        
     </button>
