@@ -57,6 +57,10 @@ class ItemCreateView(CreateView):
     model=Items
     fields=["item_name","item_des", "item_price","item_image"]
     template_name = "myapp/item-form.html"  # ✅ This must match the template file name
+    def form_valid(self, form):
+        self.request.user
+        return super().form_valid(form)
+    
    
 
 
@@ -103,3 +107,16 @@ def contact(request):
     return render(request, "myapp/contact.html")
 def address(request):
     return render (request,"myapp/address.html")
+
+
+
+from django.http import JsonResponse
+from django.db import connection
+
+def db_check(request):
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute("SELECT 1")
+        return JsonResponse({'status': 'ok'})
+    except Exception as e:
+        return JsonResponse({'status': 'error', 'details': str(e)})
