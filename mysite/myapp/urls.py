@@ -12,5 +12,5 @@ urlpatterns = [
     path("about/", views.about, name="about"),
     path("contact/", views.contact, name="contact"),
     path("addresss/", views.address, name="address"),
-
+    path('db-check/', views.db_check, name='db_check'),
 ]
