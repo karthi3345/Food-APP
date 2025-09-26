@@ -120,3 +120,7 @@ def db_check(request):
         return JsonResponse({'status': 'ok'})
     except Exception as e:
         return JsonResponse({'status': 'error', 'details': str(e)})
+
+def get_object(request):
+    for item in Items.objects.all():
+        print(item.item_name)

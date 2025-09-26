@@ -1,0 +1,691 @@
+[
+{
+    "model": "myapp.items",
+    "pk": 1,
+    "fields": {
+        "username": 2,
+        "item_name": "postgres Burger",
+        "item_des": "Tasty beef burger",
+        "item_price": 6,
+        "item_image": "burger.jpg",
+        "is_available": true,
+        "created_at": "2025-09-25T06:34:20.751Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 3,
+    "fields": {
+        "username": 1,
+        "item_name": "postgres ffff",
+        "item_des": "ederfer",
+        "item_price": -3,
+        "item_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6sid0sX921uwm7eagfetKbEn5vOs0l15qCg&s",
+        "is_available": true,
+        "created_at": "2025-09-25T06:34:20.751Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 4,
+    "fields": {
+        "username": 1,
+        "item_name": "postgres burfi",
+        "item_des": "cheesy burfi",
+        "item_price": 4,
+        "item_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6sid0sX921uwm7eagfetKbEn5vOs0l15qCg&s",
+        "is_available": true,
+        "created_at": "2025-09-25T06:34:20.751Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 5,
+    "fields": {
+        "username": 1,
+        "item_name": "Burger ",
+        "item_des": "Delicious burger snack",
+        "item_price": 1,
+        "item_image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.381Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 6,
+    "fields": {
+        "username": 1,
+        "item_name": "Fries ",
+        "item_des": "Delicious fries snack",
+        "item_price": 1,
+        "item_image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.395Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 7,
+    "fields": {
+        "username": 1,
+        "item_name": "Hot Dog ",
+        "item_des": "Delicious hot dog snack",
+        "item_price": 2,
+        "item_image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.397Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 8,
+    "fields": {
+        "username": 1,
+        "item_name": "Pizza Slice ",
+        "item_des": "Delicious pizza slice snack",
+        "item_price": 2,
+        "item_image": "https://images.unsplash.com/photo-1548365328-41e380fbdf1d?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.399Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 9,
+    "fields": {
+        "username": 1,
+        "item_name": "Sandwich ",
+        "item_des": "Delicious sandwich snack",
+        "item_price": 2,
+        "item_image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.402Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 10,
+    "fields": {
+        "username": 1,
+        "item_name": "Taco ",
+        "item_des": "Delicious taco snack",
+        "item_price": 2,
+        "item_image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f7a?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.404Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 11,
+    "fields": {
+        "username": 1,
+        "item_name": "Nachos ",
+        "item_des": "Delicious nachos snack",
+        "item_price": 3,
+        "item_image": "https://images.unsplash.com/photo-1572441710568-b2a6b4e8db70?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.406Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 12,
+    "fields": {
+        "username": 1,
+        "item_name": "Popcorn ",
+        "item_des": "Delicious popcorn snack",
+        "item_price": 3,
+        "item_image": "https://images.unsplash.com/photo-1600846600980-6c0bb758e0eb?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.410Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 13,
+    "fields": {
+        "username": 1,
+        "item_name": "Pretzel ",
+        "item_des": "Delicious pretzel snack",
+        "item_price": 3,
+        "item_image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.413Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 14,
+    "fields": {
+        "username": 1,
+        "item_name": "Chicken Nuggets ",
+        "item_des": "Delicious chicken nuggets snack",
+        "item_price": 3,
+        "item_image": "https://images.unsplash.com/photo-1562967916-eb82221dfb25?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.415Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 15,
+    "fields": {
+        "username": 1,
+        "item_name": "Mozzarella Sticks ",
+        "item_des": "Delicious mozzarella sticks snack",
+        "item_price": 4,
+        "item_image": "https://images.unsplash.com/photo-1590080877777-2ca3f00aa049?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.417Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 16,
+    "fields": {
+        "username": 1,
+        "item_name": "Onion Rings ",
+        "item_des": "Delicious onion rings snack",
+        "item_price": 4,
+        "item_image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f7a?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.419Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 17,
+    "fields": {
+        "username": 1,
+        "item_name": "Spring Rolls ",
+        "item_des": "Delicious spring rolls snack",
+        "item_price": 4,
+        "item_image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.420Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 18,
+    "fields": {
+        "username": 1,
+        "item_name": "Doughnut ",
+        "item_des": "Delicious doughnut snack",
+        "item_price": 4,
+        "item_image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.422Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 19,
+    "fields": {
+        "username": 1,
+        "item_name": "Cupcake ",
+        "item_des": "Delicious cupcake snack",
+        "item_price": 5,
+        "item_image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.424Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 20,
+    "fields": {
+        "username": 1,
+        "item_name": "Ice Cream ",
+        "item_des": "Delicious ice cream snack",
+        "item_price": 5,
+        "item_image": "https://images.unsplash.com/photo-1505253210343-29bb3cfc1d1b?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.425Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 21,
+    "fields": {
+        "username": 1,
+        "item_name": "Churros ",
+        "item_des": "Delicious churros snack",
+        "item_price": 5,
+        "item_image": "https://images.unsplash.com/photo-1590080877777-2ca3f00aa049?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.426Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 22,
+    "fields": {
+        "username": 1,
+        "item_name": "Brownie ",
+        "item_des": "Delicious brownie snack",
+        "item_price": 5,
+        "item_image": "https://images.unsplash.com/photo-1562440499-212e0417b86d?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.428Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 23,
+    "fields": {
+        "username": 1,
+        "item_name": "Samosa ",
+        "item_des": "Delicious samosa snack",
+        "item_price": 6,
+        "item_image": "https://images.unsplash.com/photo-1590080877777-2ca3f00aa049?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.430Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 24,
+    "fields": {
+        "username": 1,
+        "item_name": "Pasta Salad ",
+        "item_des": "Delicious pasta salad snack",
+        "item_price": 6,
+        "item_image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.431Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 25,
+    "fields": {
+        "username": 1,
+        "item_name": "Burger ",
+        "item_des": "Delicious burger snack",
+        "item_price": 6,
+        "item_image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.433Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 26,
+    "fields": {
+        "username": 1,
+        "item_name": "Fries ",
+        "item_des": "Delicious fries snack",
+        "item_price": 6,
+        "item_image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.434Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 27,
+    "fields": {
+        "username": 1,
+        "item_name": "Hot Dog ",
+        "item_des": "Delicious hot dog snack",
+        "item_price": 7,
+        "item_image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.435Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 28,
+    "fields": {
+        "username": 1,
+        "item_name": "Pizza Slice ",
+        "item_des": "Delicious pizza slice snack",
+        "item_price": 7,
+        "item_image": "https://images.unsplash.com/photo-1548365328-41e380fbdf1d?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.437Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 29,
+    "fields": {
+        "username": 1,
+        "item_name": "Sandwich ",
+        "item_des": "Delicious sandwich snack",
+        "item_price": 7,
+        "item_image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.439Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 30,
+    "fields": {
+        "username": 1,
+        "item_name": "Taco ",
+        "item_des": "Delicious taco snack",
+        "item_price": 7,
+        "item_image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f7a?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.440Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 31,
+    "fields": {
+        "username": 1,
+        "item_name": "Nachos ",
+        "item_des": "Delicious nachos snack",
+        "item_price": 8,
+        "item_image": "https://images.unsplash.com/photo-1572441710568-b2a6b4e8db70?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.441Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 32,
+    "fields": {
+        "username": 1,
+        "item_name": "Popcorn ",
+        "item_des": "Delicious popcorn snack",
+        "item_price": 8,
+        "item_image": "https://images.unsplash.com/photo-1600846600980-6c0bb758e0eb?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.443Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 33,
+    "fields": {
+        "username": 1,
+        "item_name": "Pretzel ",
+        "item_des": "Delicious pretzel snack",
+        "item_price": 8,
+        "item_image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.444Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 34,
+    "fields": {
+        "username": 1,
+        "item_name": "Chicken Nuggets ",
+        "item_des": "Delicious chicken nuggets snack",
+        "item_price": 8,
+        "item_image": "https://images.unsplash.com/photo-1562967916-eb82221dfb25?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.447Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 35,
+    "fields": {
+        "username": 1,
+        "item_name": "Mozzarella Sticks ",
+        "item_des": "Delicious mozzarella sticks snack",
+        "item_price": 9,
+        "item_image": "https://images.unsplash.com/photo-1590080877777-2ca3f00aa049?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.448Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 36,
+    "fields": {
+        "username": 1,
+        "item_name": "Onion Rings ",
+        "item_des": "Delicious onion rings snack",
+        "item_price": 9,
+        "item_image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f7a?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.449Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 37,
+    "fields": {
+        "username": 1,
+        "item_name": "Spring Rolls ",
+        "item_des": "Delicious spring rolls snack",
+        "item_price": 9,
+        "item_image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.451Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 38,
+    "fields": {
+        "username": 1,
+        "item_name": "Doughnut ",
+        "item_des": "Delicious doughnut snack",
+        "item_price": 9,
+        "item_image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.452Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 39,
+    "fields": {
+        "username": 1,
+        "item_name": "Cupcake ",
+        "item_des": "Delicious cupcake snack",
+        "item_price": 10,
+        "item_image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.453Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 40,
+    "fields": {
+        "username": 1,
+        "item_name": "Ice Cream ",
+        "item_des": "Delicious ice cream snack",
+        "item_price": 10,
+        "item_image": "https://images.unsplash.com/photo-1505253210343-29bb3cfc1d1b?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.455Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 41,
+    "fields": {
+        "username": 1,
+        "item_name": "Churros ",
+        "item_des": "Delicious churros snack",
+        "item_price": 10,
+        "item_image": "https://images.unsplash.com/photo-1590080877777-2ca3f00aa049?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.456Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 42,
+    "fields": {
+        "username": 1,
+        "item_name": "Brownie ",
+        "item_des": "Delicious brownie snack",
+        "item_price": 10,
+        "item_image": "https://images.unsplash.com/photo-1562440499-212e0417b86d?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.458Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 43,
+    "fields": {
+        "username": 1,
+        "item_name": "Samosa ",
+        "item_des": "Delicious samosa snack",
+        "item_price": 11,
+        "item_image": "https://images.unsplash.com/photo-1590080877777-2ca3f00aa049?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.459Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 44,
+    "fields": {
+        "username": 1,
+        "item_name": "Pasta Salad ",
+        "item_des": "Delicious pasta salad snack",
+        "item_price": 11,
+        "item_image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.461Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 45,
+    "fields": {
+        "username": 1,
+        "item_name": "Burger ",
+        "item_des": "Delicious burger snack",
+        "item_price": 11,
+        "item_image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.462Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 46,
+    "fields": {
+        "username": 1,
+        "item_name": "Fries ",
+        "item_des": "Delicious fries snack",
+        "item_price": 11,
+        "item_image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.464Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 47,
+    "fields": {
+        "username": 1,
+        "item_name": "Hot Dog ",
+        "item_des": "Delicious hot dog snack",
+        "item_price": 12,
+        "item_image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.466Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 48,
+    "fields": {
+        "username": 1,
+        "item_name": "Pizza Slice ",
+        "item_des": "Delicious pizza slice snack",
+        "item_price": 12,
+        "item_image": "https://images.unsplash.com/photo-1548365328-41e380fbdf1d?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.468Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 49,
+    "fields": {
+        "username": 1,
+        "item_name": "Sandwich ",
+        "item_des": "Delicious sandwich snack",
+        "item_price": 12,
+        "item_image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.469Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 50,
+    "fields": {
+        "username": 1,
+        "item_name": "Taco ",
+        "item_des": "Delicious taco snack",
+        "item_price": 12,
+        "item_image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f7a?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.471Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 51,
+    "fields": {
+        "username": 1,
+        "item_name": "Nachos ",
+        "item_des": "Delicious nachos snack",
+        "item_price": 13,
+        "item_image": "https://images.unsplash.com/photo-1572441710568-b2a6b4e8db70?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.472Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 52,
+    "fields": {
+        "username": 1,
+        "item_name": "Popcorn ",
+        "item_des": "Delicious popcorn snack",
+        "item_price": 13,
+        "item_image": "https://images.unsplash.com/photo-1600846600980-6c0bb758e0eb?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.474Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 53,
+    "fields": {
+        "username": 1,
+        "item_name": "Pretzel ",
+        "item_des": "Delicious pretzel snack",
+        "item_price": 13,
+        "item_image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.475Z"
+    }
+},
+{
+    "model": "myapp.items",
+    "pk": 54,
+    "fields": {
+        "username": 1,
+        "item_name": "Chicken Nuggets ",
+        "item_des": "Delicious chicken nuggets snack",
+        "item_price": 13,
+        "item_image": "https://images.unsplash.com/photo-1562967916-eb82221dfb25?auto=format&fit=crop&w=800&q=80",
+        "is_available": true,
+        "created_at": "2025-09-25T06:50:46.476Z"
+    }
+}
+]
