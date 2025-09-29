@@ -2,34 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Food App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-     <nav class="bg-black text-white">
-      <div class="flex justify-between px-4 py-2 ">
-          <a href="{% url 'myapp:index' %}" class="font-bold m-2">FoodApp</a>
-        <div class="space-x-6">
-           <a href="{% url 'myapp:contact' %}">Contact</a>  <!-- no space inside quotes -->
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-black text-white p-4 shadow">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="{% url 'myapp:index' %}" class="text-xl font-bold">FoodApp</a>
+            <div class="space-x-4">
+                <a href="{% url 'myapp:contact' %}" class="hover:underline">Contact</a>
+                <a href="{% url 'myapp:address' %}" class="hover:underline">Address</a>
+                <a href="{% url 'myapp:about' %}" class="hover:underline">About us</a>
 
-            <a href="{% url 'myapp:address'%}">Address</a>
-            <a href="{% url 'myapp:about' %}">About us</a>
-            <a href="{% url "users:profile" %}">Welcome {{user.username}} !</a>
-             <a href="{% url 'users:logout'%}">Logout </a>
-
-
+                {% if user.is_authenticated %}
+                    <a href="{% url 'users:profile' %}" class="hover:underline">Welcome {{ user.username }}!</a>
+                    <a href="{% url 'users:logout' %}" class="hover:underline text-red-400">Logout</a>
+                {% else %}
+                    <a href="{% url 'users:login' %}" class="hover:underline">Login</a>
+                {% endif %}
+            </div>
         </div>
-      </div>
     </nav>
+
+    <!-- Messages -->
     {% if messages %}
-     {% for message in messages %}
-     <div class="bg-green-500 text-green-700">
-       {{message}}
-     </div>
-     {% endfor %}
+        <div class="container mx-auto mt-4">
+            {% for message in messages %}
+                <div class="bg-green-200 text-green-800 p-3 rounded shadow mb-2">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
     {% endif %}
-    {% block body%}
-    {% endblock %}
+
+    <!-- Page Content -->
+    <main class="container mx-auto py-8">
+        {% block body %}{% endblock %}
+    </main>
 </body>
 </html>

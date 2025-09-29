@@ -8,21 +8,29 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView,UpdateView,DeleteView
 from django.urls import reverse_lazy
+from django.core.paginator import Paginator
 
+from .models import Items
 
+def index(request):
+    item_list = Items.objects.all()
+    paginator = Paginator(item_list, 6)  # Show 6 items per page
+    print("paginator:",paginator)
 
-# # Create your views here.
-# def index(request):  # ✅ Correct
-#     item=Items.objects.all()
-#     context={
-#         "item":item
-#     }
-#     return render(request,"myapp/index.html",context)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)  # get_page handles invalid page numbers
+    
+
+    context = {
+        'page_obj': page_obj,
+    }
+    return render(request, 'myapp/index.html', context)
 
 class IndexClassView(ListView):
     model= Items
     template_name="myapp/index.html"
-    context_object_name= "item"
+    context_object_name = "item"  # 'item' will be your paginated items in template
+    paginate_by = 4 
 
 # def detail(request,id):
 #     detail_item=Items.objects.get(id=id)
